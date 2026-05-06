@@ -1,0 +1,92 @@
+
+========================================================================
+PASS 1: Structural row counts across all output files
+========================================================================
+  JSON file      OT: 23,347   NT: 7,960
+  Markdown       OT: 23,347   NT: 7,960
+  Plain text     OT: 23,347   NT: 7,960
+
+  ✓ All three output formats agree
+
+========================================================================
+PASS 2: Landmark verse alignment checks
+========================================================================
+  ✓ OT Genesis        1:1  both columns match expectations
+  ✓ OT Exodus         20:3  both columns match expectations
+  ✓ OT Deuteronomy    6:4  both columns match expectations
+  ✓ OT Psalms         23:1  both columns match expectations
+  ✓ OT Isaiah         53:5  both columns match expectations
+  ✓ NT Matthew        6:9  both columns match expectations
+  ✓ NT John           3:16  both columns match expectations
+  ✓ NT Colossians     2:14  both columns match expectations
+  ✓ NT 1 John         5:7  both columns match expectations
+  ✓ NT Revelation     22:21  both columns match expectations
+
+  Landmark checks: 10/10 passed
+
+========================================================================
+PASS 3: Versification — where Hebrew and English differ
+========================================================================
+
+  OT BOOKS WHERE HEBREW AND KJV DIVERGE (versification differences):
+  Book                  Aligned   HEB only   KJV only
+  -------------------- -------- ---------- ----------
+  Genesis                  1532          1          1
+  Exodus                   1208          5          5
+  Leviticus                 852          7          7
+  Numbers                  1272         17         16
+  Deuteronomy               956          3          3
+  1 Samuel                  809          2          1
+  2 Samuel                  694          1          1
+  1 Kings                   802         15         14
+  2 Kings                   718          1          1
+  1 Chronicles              927         16         15
+  2 Chronicles              820          2          2
+  Nehemiah                  398          7          8
+  Job                      1062          8          8
+  Psalms                   2461         66          0
+  Ecclesiastes              221          1          1
+  Song of Solomon           116          1          1
+  Isaiah                   1290          1          2
+  Jeremiah                 1363          1          1
+  Ezekiel                  1268          5          5
+  Daniel                    353          4          4
+  Hosea                     193          4          4
+  Joel                       52         21         21
+  Jonah                      47          1          1
+  Micah                     104          1          1
+  Nahum                      46          1          1
+  Zechariah                 207          4          4
+  Malachi                    49          6          6
+
+  NT BOOKS WHERE GREEK AND KJV DIVERGE:
+  Book                  Aligned   GRK only   KJV only
+  -------------------- -------- ---------- ----------
+  Luke                     1150          0          1
+  Acts                     1004          0          3
+  Romans                    430          3          3
+
+  OT SUMMARY:
+    Aligned (both filled):  23,011
+    Hebrew only (no KJV):      202  (Psalms superscriptions + other)
+    KJV only (no Hebrew):      134
+    Total OT rows:          23,347
+    KJV canonical total:    23,145 (should be 23,145)
+
+  NT SUMMARY:
+    Aligned (both filled):   7,950
+    Greek only (no KJV):         3
+    KJV only (no Greek):         7  (TR-only verses missing from Byzantine)
+    Total NT rows:           7,960
+    KJV canonical total:    7,957 (should be 7,957)
+
+========================================================================
+VERIFICATION SUMMARY
+========================================================================
+  PASS 1 — Cross-file structural counts:   CLEAN
+  PASS 2 — Landmark alignments:            10/10
+  PASS 3 — Versification transparency:     336 OT, 10 NT divergences documented
+
+  Total OT rows:  23,347  (Hebrew: 23,213, KJV: 23,145)
+  Total NT rows:  7,960  (Greek:  7,953, KJV: 7,957)
+  Grand total:    31,307
